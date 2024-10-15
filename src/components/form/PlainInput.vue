@@ -16,11 +16,11 @@ const updateValue = e => {
     <div class="flex">
       <input
         :type="inputProp.type || 'text'"
-        class="border p-2 rounded-l outline-none border-neutral-300 text-neutral-700 text-[30px] w-full sm:w-[300px]"
+        class="border p-2 rounded-l outline-none border-neutral-300 text-neutral-700 text-[30px] w-full sm:w-[200px]"
         :value="modelValue"
         @input="updateValue"
       />
-      <div class="bg-neutral-900 rounded-r text-white p-6">
+      <div class="bg-neutral-900 rounded-r text-white p-3 grid place-content-center text-[12px] text-nowrap sm:text-[13px]">
         {{ inputProp.label }}
       </div>
     </div>

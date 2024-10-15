@@ -14,11 +14,11 @@ const updateValue = e => {
       inputProp.label
     }}</label>
 
-    <div class="border p-2 rounded border-neutral-300 sm:w-[300px]">
+    <div class="border p-1 rounded border-neutral-300 sm:w-[300px]">
       <select
         name=""
         id=""
-        class="outline-none text-neutral-700 text-[13px] w-full bg-inherit"
+        class="outline-none p-1 text-neutral-700 text-[13px] w-full bg-inherit"
         :value="modelValue"
         @input="updateValue"
       >
