@@ -57,12 +57,14 @@ const calculatedVal = computed(() => {
       Number(fromVal.value),
       conversionType.value,
     )
-    return TEMPERATURE_CALCULATION.toFixed(2)
+    return TEMPERATURE_CALCULATION
+      ? TEMPERATURE_CALCULATION.toLocaleString()
+      : 0
   }
-  
+
   const OTHER_CALCULATION =
     Number(fromVal.value) * Number(conversionInfo.conversion_ratio)
-  return OTHER_CALCULATION.toFixed(2)
+  return OTHER_CALCULATION.toLocaleString()
 })
 </script>
 
